@@ -1,0 +1,30 @@
+%html
+  %head
+    %meta{charset: 'utf-8'}/
+    %meta{content: 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'}/
+    %title= current_page.data.title || 'Bulutfon'
+    = stylesheet_link_tag 'style',
+                          '//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css',
+                          '//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css'
+    = javascript_include_tag  'all', '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'
+  %body{class: page_classes}
+    %header
+      %nav.navbar.navbar-default{role: "navigation"}
+        .container
+          .navbar-brand
+            =link_to 'Bulutfon Developer', '/#'
+          .navbar-right
+            .collapse.navbar-collapse
+              %ul.nav.navbar-nav.navbar-right
+                %li=link_to 'API', '#'
+                %li=link_to 'Topluluk','/community.html'
+                .navbar-form.navbar-left{role: "search"}
+                  %input.form-control{placeholder: "Search", type: "text"}
+    = yield
+    %footer.footer
+      .container
+        %p
+          © Copyright 2014 Bulutfon. Tüm hakları saklıdır.
+
+
+
