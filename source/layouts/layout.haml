@@ -13,18 +13,13 @@
       %nav.navbar.navbar-default{role: "navigation"}
         .container
           .navbar-brand
-
-            =image_tag '../images/bulutfon.jpg', class: 'navbar-logo'
-            =link_to 'Developer', '/#' ,class:'brand-block'
-
-
+            =link_to 'Bulutfon Developer', '/#' , class: 'brand-block'
           .navbar-right
             .collapse.navbar-collapse
               %ul.nav.navbar-nav.navbar-right
-                %li=link_to 'API', '#'
+                %li=link_to 'API', 'https://github.com/bulutfon/bulutfon-api' , target:'_blank'
                 %li=link_to 'Topluluk','/community.html'
-                .navbar-form.navbar-left{role: "search"}
-                  %input.form-control{placeholder: "Search", type: "text"}
+
     = yield
     %footer.footer
       .container
