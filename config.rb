@@ -70,3 +70,11 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+# Deployment
+activate :deploy do |deploy|
+  deploy.method = :git
+  # Optional Settings
+  deploy.remote = 'git@github.com:bulutfon/developer.bulutfon.com.git'
+  deploy.branch = 'gh-pages'
+end

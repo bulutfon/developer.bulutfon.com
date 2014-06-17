@@ -18,3 +18,6 @@ gem 'bootstrap-sass'
 gem  'bootstrap'
 
 gem 'font-awesome-sass'
+
+# Middleman-deploy
+gem 'middleman-deploy', '~> 0.2.4'
