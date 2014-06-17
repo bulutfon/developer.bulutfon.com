@@ -1,0 +1,77 @@
+/* line 6, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+.container {
+  width: 1000px !important; }
+
+/* line 8, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+.navbar-logo {
+  height: 40px;
+  margin-top: -9px; }
+
+/* line 11, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+.brand-block {
+  font-size: 1.5em;
+  padding-left: 10px;
+  position: relative;
+  top: 5px; }
+
+/* line 17, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+.navbar-brand a:hover {
+  text-decoration: none !important; }
+
+/* line 19, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+#forum_embed {
+  left: 15%;
+  position: relative; }
+
+/* line 24, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+#section1 {
+  height: auto;
+  width: auto;
+  text-align: center;
+  background-color: #25b89a;
+  margin-top: -22px;
+  padding-top: 50px; }
+  /* line 31, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+  #section1 h1, #section1 h2 {
+    color: white; }
+
+/* line 33, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+#section2 {
+  height: auto;
+  margin-top: 35px; }
+  /* line 36, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+  #section2 h3 {
+    text-align: center;
+    font-size: 50px; }
+
+/* line 40, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+.section_img {
+  margin-top: 100px;
+  background: url("../images/header.jpg") no-repeat top;
+  height: 383px;
+  background-position: center -37px; }
+
+/* line 46, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+footer.footer {
+  background-color: whitesmoke;
+  height: 50px; }
+  /* line 49, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+  footer.footer p {
+    text-align: center;
+    color: darkgrey;
+    padding-top: 16px;
+    font-size: 13px; }
+
+/* line 56, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+.left-block p, .right-block p, .center-block > ul p {
+  font-size: 1.3em;
+  font-family: "helvetica neue"; }
+/* line 59, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+.left-block li, .right-block li, .center-block > ul li {
+  list-style-type: none; }
+
+/* line 61, /Users/ooo/Documents/Workspace/bulutfon/developer/source/assets/stylesheets/style.css.sass */
+.main-block {
+  padding-top: 50px;
+  position: relative;
+  left: 37px; }
