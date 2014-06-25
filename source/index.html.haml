@@ -1,19 +1,30 @@
 #section1
-  %h1 Bulutfon olarak açık kaynağı
-  %h1 seviyor, kullanıyor ve destekliyoruz.
+  %h1  Açık kaynağı seviyor, kullanıyor ve destekliyoruz.
+  %p.scroll-down
+    %a{href: '#section2'}
+      %i.fa.fa-angle-double-down.fa-5x
   .section_img.container
+
+
 
 #section2.container
   %h3 Kullandığımız Teknolojiler
   .container.main-block
     .col-lg-4.left-block
       %ul
-        %p İşletim Sistemler
+        %p İşletim Sistemleri
         %li=link_to  'Ubuntu','http://www.ubuntu.com/', target:'_blank'
         %li=link_to 'CentOs','http://www.centos.org/', target:'_blank'
       %ul
-        %p Web ve Uygulama Sunucusu
-        %li=link_to 'Nginx','http://nginx.org/',target:'_blank'
+        %p Çatılar
+        %li=link_to 'Rails','http://rubyonrails.org/',target:'_blank'
+        %li=link_to 'JQuery','http://jquery.com/',target:'_blank'
+        %li=link_to 'Bootstrap','http://getbootstrap.com/',target: '_blank'
+      %ul
+        %p SIP Sunucusu
+        %li=link_to 'Kamailio','http://www.kamailio.org/w/',target:'_blank'
+        %li=link_to 'Open Sips','http://www.opensips.org/',target:'_blank'
+    .col-lg-4.center-block
       %ul
         %p Programlama Dilleri
         %li=link_to 'Ruby','https://www.ruby-lang.org/en/',target:'_blank'
@@ -21,32 +32,29 @@
         %li=link_to 'JavaScript','#',target:'_blank'
         %li=link_to 'Bash','http://www.gnu.org/software/bash/',target:'_blank'
         %li=link_to 'Lua','http://www.lua.org/',target:'_blank'
-    .col-lg-4.center-block
       %ul
-        %p Çatılar
-        %li=link_to 'Rails','http://rubyonrails.org/',target:'_blank'
-        %li=link_to 'JQuery','http://jquery.com/',target:'_blank'
-        %li=link_to 'Bootstrap','http://getbootstrap.com/',target: '_blank'
-      %ul
-        %p Ön Derleyiciler
-        %li=link_to 'Haml','http://haml.info/',target: '_blank'
-        %li=link_to 'Sass','http://sass-lang.com/',target: '_blank'
-        %li=link_to 'Coffescript','http://coffeescript.org/',target: '_blank'
+        %p Web ve Uygulama Sunucusu
+        %li=link_to 'Nginx','http://nginx.org/',target:'_blank'
       %ul
         %p Medya Sunucusu
         %li=link_to 'FreeSwitch','http://freeswitch.org/',target:'_blank'
+
     .col-lg-4.right-block
       %ul
         %p Veritabanı
         %li=link_to 'PostgreSQL','http://www.postgresql.org/',target: '_blank'
         %li=link_to 'MongoDB','http://www.mongodb.org/',target: '_blank'
-
       %ul
-        %p SIP Sunucusu
-        %li=link_to 'Kamailio','http://www.kamailio.org/w/',target:'_blank'
-        %li=link_to 'Open Sips','http://www.opensips.org/',target:'_blank'
+        %p Ön Derleyiciler
+        %li=link_to 'Haml','http://haml.info/',target: '_blank'
+        %li=link_to 'Sass','http://sass-lang.com/',target: '_blank'
+        %li=link_to 'Coffescript','http://coffeescript.org/',target: '_blank'
+
       %ul
         %p Diğerleri
         %li=link_to 'Elasticsearch','http://www.elasticsearch.org/',target:'_blank'
         %li=link_to 'RabbitMQ','https://www.rabbitmq.com',target:'_blank'
 
+#section3.container
+  %a{href: 'https://github.com/bulutfon', target: '_blank'}
+    %i.fa.fa-github.fa-3x

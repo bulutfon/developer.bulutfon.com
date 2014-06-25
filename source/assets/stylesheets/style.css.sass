@@ -18,6 +18,14 @@ $footer-texts: #A9A9A9
   padding-left: 5px
   position: relative
   top: 5px
+  font-weight: bolder
+.brand-color
+  @extend .brand-block
+  color: $section1-color
+  font-weight: normal
+  &:hover
+    opacity: .80
+    color: $section1-color
 .navbar-brand
   text-align: center
   a:hover
@@ -39,11 +47,33 @@ $footer-texts: #A9A9A9
     background: url('../images/bulutfon-developers-header.png') no-repeat center center
     background-size: cover
     height: 900px
-    margin-top: -150px
+    margin-top: -200px
   h1,h2
     color: white
     position: relative
     top: 150px
+  .scroll-down
+    margin: auto
+    text-align: center
+    position: relative
+    top: 151px
+    width: 50px
+    left: -10px
+    -webkit-animation-name: bounce
+    -moz-animation-name: bounce
+    -webkit-animation-duration: 0.5s
+    -moz-animation-duration: 0.5s
+    -webkit-animation-iteration-count: infinite
+    -moz-animation-iteration-count: infinite
+    -webkit-animation-direction: alternate
+    -moz-animation-direction: alternate
+    -webkit-animation-timing-function: eaze-in-out
+    -moz-animation-timing-function: eaze-in-out
+
+    i.fa
+      color: white !important
+
+
 #section2
   height: auto
   margin-top: 35px
@@ -52,7 +82,14 @@ $footer-texts: #A9A9A9
     font-size: 50px
 
 
-
+#section3
+  width: auto
+  height: auto
+  margin: auto 0px
+  color: black
+  opacity: .70
+  padding: 35px
+  text-align: center
 
 
 footer.footer
@@ -71,6 +108,8 @@ ul
     font-family: "helvetica neue" !important
   li
     list-style-type: none
+    padding: 7px
+    font-size: 18px
 .main-block
   padding-top: 50px
   position: relative
