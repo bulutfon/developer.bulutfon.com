@@ -68,6 +68,27 @@ $footer-texts: #A9A9A9
   h3
     text-align: center
     font-size: 50px
+ul
+  padding: 10px
+.left-block,.right-block,.center-block > ul
+  p
+    font-size: 1.5em !important
+    font-family: "helvetica neue" !important
+  i
+    font-size: 20px
+  li
+    list-style-type: none
+    padding: 7px
+    font-size: 18px
+    position: relative
+    top: 10px
+    left: 19px
+
+.main-block
+  padding-top: 50px
+  position: relative
+  left: 37px
+  height: 50%
 
 #section3
   width: auto
@@ -89,7 +110,6 @@ $footer-texts: #A9A9A9
       color: grey
 
 
-
 footer.footer
   background-color: $footer-color
   height: 50px
@@ -98,23 +118,25 @@ footer.footer
     color: $footer-texts
     padding-top: 16px
     font-size: 13px
-ul
-  padding: 10px
-.left-block,.right-block,.center-block > ul
-  p
-    font-size: 1.5em !important
-    font-family: "helvetica neue" !important
-  i
-    font-size: 20px
-  li
-    list-style-type: none
-    padding: 7px
-    font-size: 18px
+
+@media screen and (max-width: 1203px)
+  footer, #section3
+    position: relative
+    top: 800px
+@media screen and (max-width: 1170px)
+  footer, #section3
+    position: relative
+    top: 900px
+@media screen and (max-width: 775)
+  footer, #section3
     position: relative
     top: 10px
-    left: 19px
-.main-block
-  padding-top: 50px
-  position: relative
-  left: 37px
-  height: 50%
+
+@media screen and (max-width: 700)
+  footer, #section3
+    position: relative
+    top: 700px
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+  .section_img.container
+    background: url('../images/bulutfon-developers-header@2x.png') no-repeat center center
