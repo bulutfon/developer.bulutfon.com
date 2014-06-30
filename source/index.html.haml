@@ -1,16 +1,17 @@
 #illustration-space
   %h1  Açık kaynağı seviyor, kullanıyor ve destekliyoruz.
   %p.scroll-down
-    %a{href: '#section2'}
+    %a{href: '#our-technologies'}
       %i.fa.fa-angle-double-down.fa-5x
-  .illustration
+  = image_tag 'header-illustration.png', class: 'illustration'
+
 
 #our-technologies.container
   %h3 Kullandığımız Teknolojiler
   .container.main-block
     .col-lg-4.left-block
       %ul
-        %i.fa.fa-cubes.fa-2x
+        %i.fa.fa-cube.fa-2x
           İşletim Sistemleri
         %li=link_to  'Ubuntu','http://www.ubuntu.com/', target:'_blank'
         %li=link_to 'CentOs','http://www.centos.org/', target:'_blank'
