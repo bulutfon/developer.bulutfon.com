@@ -27,7 +27,22 @@
   text-align: center
   a:hover
     text-decoration: none !important
-
+.navbar-right
+  ul
+    li
+      width: auto
+      float: left
+      display: inline-block
+      text-decoration: none
+      margin-left: 30px
+      .fa
+        display: inline !important
+      a
+        color: #595959
+        font-size: 15px
+        &:hover
+          color: #5e5e5e
+          text-decoration: none
 
 #forum_embed
   left: 15%
@@ -62,6 +77,17 @@
     .fa
       color: white !important
       text-decoration: none
+    .bounce
+      -webkit-animation-name: bounce
+      -moz-animation-name: bounce
+      -webkit-animation-duration: 0.5s
+      -moz-animation-duration: 0.5s
+      -webkit-animation-iteration-count: infinite
+      -moz-animation-iteration-count: infinite
+      -webkit-animation-direction: alternate
+      -moz-animation-direction: alternate
+      -webkit-animation-timing-function: eaze-in-out
+      -moz-animation-timing-function: eaze-in-out
 
 #our-technologies
   height: auto
@@ -70,7 +96,8 @@
     margin: 0px auto
     text-align: center
 ul
-  padding: 10px
+  padding: 20px
+
 
 .size
   float: right
@@ -103,6 +130,7 @@ ul
   top: 20px
   text-align: center
   .btn-lg
+    margin-bottom: 20px
     padding: 4px 16px !important
 b
   position: relative

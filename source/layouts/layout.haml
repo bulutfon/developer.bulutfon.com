@@ -25,9 +25,15 @@
           .navbar-right
             .collapse.navbar-collapse
               %ul.nav.navbar-nav.navbar-right
-                %li=link_to 'Teknolojiler','#our-technologies'
-                %li=link_to 'API', 'https://github.com/bulutfon/bulutfon-api' , target:'_blank'
-                %li=link_to 'Topluluk','/community.html'
+                %li
+                  %i.fa.fa-laptop.fa-fw
+                    =link_to 'Teknolojiler','#our-technologies'
+                %li
+                  %i.fa.fa-cloud.fa-fw
+                    =link_to 'API', 'https://github.com/bulutfon/bulutfon-api' , target:'_blank'
+                %li
+                  %i.fa.fa-users.fa-fw
+                    =link_to 'Topluluk','/community.html'
 
     = yield
 
