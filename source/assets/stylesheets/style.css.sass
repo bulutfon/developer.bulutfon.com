@@ -79,18 +79,18 @@
     position: relative
     width: 100%
     height: auto
-    margin-top: -150px
+    margin-top: -180px
 
   h1,h2
     color: white
     position: relative
-    top: 200px
+    top: 180px
     z-index: 2
   .scroll-down
     margin: 30px auto
     text-align: center
     position: fixed
-    top: 200px
+    top: 170px
     width: 50px
     z-index: 1
     left: -10px
@@ -99,17 +99,17 @@
       text-decoration: none
   .bounce
     position: relative
-    -webkit-animation-name: bounce
-    -moz-animation-name: bounce
-    -webkit-animation-duration: 0.5s
-    -moz-animation-duration: 0.5s
-    -webkit-animation-iteration-count: infinite
-    -moz-animation-iteration-count: infinite
-    -webkit-animation-direction: alternate
-    -moz-animation-direction: alternate
-    -webkit-animation-timing-function: eaze-in-out
-    -moz-animation-timing-function: eaze-in-out
+    -webkit-animation: bounce 1s infinite
 
+    @-webkit-keyframes bounce
+      0%
+        bottom: 5px
+      25%, 75%
+        bottom: 15px
+      50%
+        bottom: 20px
+      100%
+        bottom: 0
 #our-technologies
   height: auto
   margin-top: 35px
