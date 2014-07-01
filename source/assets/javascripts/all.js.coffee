@@ -14,3 +14,4 @@ $("a[href*=#]:not([href=#])").click ->
           width: "linear"
           height: "easeOutCubic"
       false
+
