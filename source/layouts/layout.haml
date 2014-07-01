@@ -7,7 +7,7 @@
     %meta{content: '', name: 'description'}/
     %meta{content: '', name: 'keywords'}/
 
-    = stylesheet_link_tag 'style',
+    = stylesheet_link_tag 'style.css',
                           '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'
 
     = favicon_tag 'favicon.png'
@@ -27,7 +27,7 @@
               %ul.nav.navbar-nav.navbar-right
                 %li=link_to 'Teknolojiler','#our-technologies'
                 %li=link_to 'API', 'https://github.com/bulutfon/bulutfon-api' , target:'_blank'
-                %li=link_to 'Topluluk','/community.html', target:'_blank'
+                %li=link_to 'Topluluk','/community.html'
 
     = yield
 
