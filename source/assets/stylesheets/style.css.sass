@@ -1,64 +1,196 @@
-//colors
-$section1-color: #25b89a
-$footer-color: #F5F5F5
-$footer-texts: #A9A9A9
+@import "compass"
+@import "variables"
+@import "bootstrap"
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|fontawesome|iconicfill)
 
-.container
-  width: 1000px !important
+/* brandico
+
+[class*="brandico-"]:before
+  font-family: 'brandico', sans-serif
+
+/* entypo
+
+[class*="entypo-"]:before
+  font-family: 'entypo', sans-serif
+
+/* fontawesome
+
+[class*="fontawesome-"]:before
+  font-family: 'FontAwesome', sans-serif
+
+/* iconfill
+[class*="iconicfill-"]:before
+  font-family: 'IconicFill', sans-serif
+
+.navbar
+  min-height: 70px !important
 .navbar-logo
   height: 40px
   margin-top: -9px
+.navbar-nav
+  position: relative !important
 .brand-block
   font-size: 1.5em
-  padding-left: 10px
+  padding-left: 5px
   position: relative
   top: 5px
+  font-weight: bolder
+
+.brand-color
+  @extend .brand-block
+  color: $illustration-space-color
+  font-weight: normal
+  &:hover
+    opacity: .80
+    color: $illustration-space-color
 .navbar-brand
+  text-align: center
   a:hover
     text-decoration: none !important
+.navbar-right
+  ul
+    li
+      width: auto
+      float: left
+      display: inline-block
+      text-decoration: none
+      margin-left: 30px
+      .fa
+        display: inline !important
+      a
+        color: $navbar_color_text
+        font-size: 15px
+        &:hover
+          color: $navbar_color_text_hover
+          text-decoration: none
+
 #forum_embed
   left: 15%
   position: relative
 
-
-#section1
+#illustration-space
   height: auto
   width: auto
   text-align: center
-  background-color: $section1-color
   margin-top: -22px
-  padding-top: 50px
+  background-color: $illustration-space-color
+  z-index: -1
+  img.illustration
+    position: relative
+    width: 100%
+    height: auto
+    margin-top: -70px
+
   h1,h2
     color: white
-#section2
+    position: relative
+    top: 200px
+    z-index: 2
+  .scroll-down
+    margin: 560px auto
+    text-align: center
+    position: absolute
+    z-index: 12
+    .fa
+      color: white !important
+      text-decoration: none
+      margin-left: -60px
+.bounce
+  position: fixed
+  left: 50%
+  margin-top: -25px
+  margin-left: -25px
+  height: 50px
+  width: 50px
+  -webkit-animation: bounce 1s infinite
+
+@-webkit-keyframes bounce
+  0%
+    bottom: 5px
+  25%, 75%
+    bottom: 15px
+  50%
+    bottom: 20px
+  100%
+    bottom: 0
+#our-technologies
   height: auto
   margin-top: 35px
-  h3
+  h1
+    margin: -30px auto
     text-align: center
-    font-size: 50px
 
-.section_img
-  margin-top: 100px
-  background: url('../images/header.jpg') no-repeat top
-  height: 383px
-  background-position: center -37px
+ul
+  padding: 20px
 
+
+.size
+  float: right
+.left-block,.right-block,.center-block > ul
+  p
+    font-size: 1.5em !important
+    font-family: "helvetica neue" !important
+  i
+    font-size: 20px
+  li
+    list-style-type: none
+    padding: 7px
+    font-size: 18px
+    position: relative
+    top: 10px
+    left: 0px
+  span
+    font-size: 20px
+
+.main-block
+  padding-top: 50px
+  position: relative
+  left: 53px
+  height: 50%
+
+#section3
+  width: auto
+  height: auto
+  margin: auto 0px
+  padding: 50px
+  position: relative
+  top: 20px
+  text-align: center
+  .btn-lg
+    margin-bottom: 20px
+    padding: 4px 16px !important
+b
+  position: relative
+  top: -12px
+  font-weight: normal !important
 footer.footer
   background-color: $footer-color
   height: 50px
+  margin-bottom: -19px
   p
     text-align: center
     color: $footer-texts
     padding-top: 16px
     font-size: 13px
+    a
+      color: $footer-texts
+.fa.fa-laptop
+  color: #000000
 
-.left-block,.right-block,.center-block > ul
-  p
-    font-size: 1.3em
-    font-family: "helvetica neue"
-  li
-    list-style-type: none
-.main-block
-  padding-top: 50px
-  position: relative
-  left: 37px
+@media screen and (max-width: 1203px)
+  footer, #section3
+    position: relative
+    top: 800px
+@media screen and (max-width: 1170px)
+  footer, #section3
+    position: relative
+    top: 900px
+@media screen and (max-width: 775)
+  footer, #section3
+    position: relative
+    top: 10px
+
+@media screen and (max-width: 700)
+  footer, #section3
+    position: relative
+    top: 700px
